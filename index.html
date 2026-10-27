@@ -93,11 +93,7 @@
   .body{flex:1; min-width:0; padding:13px 15px 4px}
   .head{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
   h3{font-size:15.5px; font-weight:700; margin:0; letter-spacing:-.01em; overflow-wrap:anywhere}
-  .kind{font-size:11px; font-weight:700; letter-spacing:.03em; padding:2px 8px; border-radius:20px; background:var(--blue-bg); color:var(--blue)}
-  .k-Design .kind{background:var(--purple-bg); color:var(--purple)}
-  .k-FigJam .kind{background:var(--green-bg); color:var(--green)}
-  .k-Slides .kind{background:var(--amber-bg); color:var(--amber)}
-  .k-Make .kind{background:var(--accent-bg); color:var(--accent)}
+  .kind{font-size:11px; font-weight:700; letter-spacing:.03em; padding:2px 8px; border-radius:20px; background:var(--panel2); color:var(--dim)}
   .sub,.desc{margin:4px 0 0; font-size:13px}
   .sub{color:var(--dim2)} .sub b{color:var(--dim); font-weight:600}
   .desc{color:var(--dim)}
@@ -125,11 +121,8 @@
   /* 목록 배치(thumbnails=false): 그림 없이 한 줄 카드, 왼쪽 색 띠, 오른쪽 버튼 */
   .list .cards{display:flex; flex-direction:column; gap:10px}
   .list .card{flex-direction:row; align-items:center; border-radius:12px; position:relative}
-  .list .card::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--blue)}
-  .list .card.k-Design::before{background:var(--purple)} .list .card.k-FigJam::before{background:var(--green)}
-  .list .card.k-Slides::before{background:var(--amber)} .list .card.k-Make::before{background:var(--accent)}
   .list .card:hover{transform:none}
-  .list .body{padding:13px 16px 13px 19px}
+  .list .body{padding:13px 16px 13px 17px}
   .list .thumb{order:2; flex:none; width:136px; height:82px; aspect-ratio:auto; border:1px solid var(--line); border-radius:9px;
     margin:10px 12px 10px 0; background:var(--panel2)}
   .list .body{order:1} .list .acts{order:3}
@@ -139,7 +132,7 @@
   @media (max-width:640px){
     .list .card{flex-wrap:wrap}
     .list .thumb{order:0; width:100%; height:auto; aspect-ratio:16/9; margin:0; border:none; border-bottom:1px solid var(--line); border-radius:0}
-    .list .acts{flex-direction:row; flex:1 1 100%; padding:0 14px 12px 19px}
+    .list .acts{flex-direction:row; flex:1 1 100%; padding:0 14px 12px 17px}
     .list .btn{flex:1}
   }
   .empty{display:none; color:var(--dim2); font-size:14px; padding:36px 16px; text-align:center; border:1px dashed var(--line); border-radius:12px; margin-top:20px}
